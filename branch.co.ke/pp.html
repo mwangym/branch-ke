@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f23f174f50","applicationID":"6850987","transactionName":"e1wKQhcJDw1SFxZeXFVWS0YV","queueTime":1,"applicationTime":27,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loanika is a bank in your pocket, there for you at all times. Our first service is credit. We use technology to dramatically reduce the cost of delivering financial services in emerging markets. Join our team and help us disrupt financial services around the globe.">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+
+    
+<link rel="canonical" href="pp.html">
+
+ 
+
+
+    <title>Loanika Kenya | Privacy PolicyPrivacy Policy</title>
+
+
+    <link rel="stylesheet" media="all" href="../d2c5ectx2y1vm9.cloudfront.net/assets/web-779a269a03dc3886f6f94cc2bd9143dcc0cfd3d7ff553188535ef68f74b4e171.css" data-turbolinks-track="true" />
+
+    <script src="../code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+//<![CDATA[
+window.jQuery || document.write(unescape('%3Cscript src="../d2c5ectx2y1vm9.cloudfront.net/assets/jquery-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js">%3C/script>'))
+//]]>
+</script>
+    <script src="../d2c5ectx2y1vm9.cloudfront.net/assets/web-1ecac8df84a895c68ab4857e3c85ba11b33617ced0f91531a1ee6d2f67a36c0e.js" data-turbolinks-track="true"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="eSeVJBVWE5OPjVcwT8oepgPwNAj6AKn9O6NQw343IgvoW5URTImwNDQp/cMDYyMskT0bDyYoPUNU+2KoJk1ofQ==" />
+
+      <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','../connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1034729949927829');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');</script>
+      <noscript><img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=1034729949927829&amp;ev=PageView&amp;noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+
+      <!-- Google Tag Manager -->
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TCGSTZW');</script>
+      <!-- End Google Tag Manager -->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class='body-pp'>
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCGSTZW"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+        
+<div class='container-fluid fixed-top transparent' id='header-container'>
+  <div class='container'>
+    <nav class="navbar navbar-nav navbar-custom navbar-expand py-3">
+        <ul class="nav navbar-root navbar-root-single mr-auto" id='nav-logo'>
+          <li class="nav-link"><a active_class="text-decoration-none active" inactive_class="text-decoration-none" class="text-decoration-none" href="index.html"><img style="height: 2.8rem;" class="transition-brightness" src="../d2c5ectx2y1vm9.cloudfront.net/assets/logo-5a6f97f580a4f616c2d8eaee20ed2326c2bb68596e1aeb1d9b3364a2f1e6ae1b.png" /></a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-nav-single navbar-pp navbar-ke" id='nav-primary'>
+          <li class="nav-link"><a class="text-decoration-on-hover" href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+$('#nav-open').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').addClass('nav-md-show');
+});
+$('#nav-close').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').removeClass('nav-md-show');
+});
+</script>
+
+      
+<div class='container-fluid bg-light-green pt-5 hero generic-hero'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-7 mt-20 mt-lg-30'>
+        <h1 class='pt-6 text-center text-md-left'>Privacy Policy</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+	<div class='row my-10'>
+		<div class='col'>
+
+      
+<h3>Privacy Policy for Loanika International and its associated entities</h3>
+<p>Loanika International, together with its associated entity duly incorporated in your country, (Loanika or WE) are committed to protecting and respecting your privacy.</p>
+
+<h3>Scope of policy</h3>
+  <p>This privacy policy (Policy) together with our Terms of Use and Loan Account Agreement as set out at http://Loanika.co/tou and any additional terms of use applies to your use of:</p>
+  <p>1. Loanika mobile application software (App) available on our site OR hosted on the Google Play Store (App Site), once you have downloaded or streamed a copy of the App onto your mobile telephone or handheld device (Device).</p>
+  <p>2. Any of the services accessible through the App (Services) or those available on the App Site or other sites of ours or other third-party Sites (Service Sites).</p>
+  <p>This policy sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.</p>
+  <strong>Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. By downloading the App, you confirm that you have read, understood and accept the terms of this Policy set out hereunder. You also consent to the collection, use, storage, processing and disclosure of your personal information in the manner set out in this Policy.</strong>
+  <br /><br />
+
+<h3>A. Information we may collect from you</h3>
+  <p>We may collect and process the following data about you.</p>
+
+  <p><strong>i. Information you give us about you (Submitted information):</strong></p>
+  <p>This may include information:</p>
+    <ul class="pl-3">
+      <li>provided by filling in forms in the App or on the App Site (together Our Sites);</li>
+      <li>provided by corresponding with us (for example, by e-mail or chat);</li>
+      <li>provided by registering to use the App Site, downloading or registering the App, subscribing to any of our Services (such as applying for a loan), searching for an app or Service, sharing data via the App's social media functions, entering a competition, promotion or survey, and reporting a problem with the App, our Services, our App Site or any of Our Service Sites.</li>
+    </ul>
+  <p>This information may include your name, address, e-mail address and phone number, the Device's phone number, SIM card details, age, username, password and other registration information, financial and credit information (including your mobile money account details, bank account details, and bank verification number, where applicable), personal description and photograph.</p>
+
+  <p><strong>ii. Information we collect about you and your device.</strong></p>
+  <p>Each time you visit one of our Sites or use one of our Apps we may automatically collect the following information:</p>
+    <ul class="pl-3">
+      <li>technical information, including the type of mobile device you use, unique device identifiers (for example, your Device's IMEI or serial number), information about the SIM card used by the Device, mobile network information, your Device’s operating system, the type of browser you use, or your Device’s location and time zone setting (Device Information);</li>
+      <li>information stored on your Device, including contact lists, call logs, SMS logs, Facebook friends, contact lists from other social media accounts, photos, videos or other digital content (Content Information);</li>
+      <li>data from your use of any other third-party application on the Device or the Service Sites; and</li>
+      <li>details of your use of any of our Apps or your visits to any of Our Service Sites; including, but not limited to, traffic data, location data, weblogs and other communication data (Log Information).</li>
+    </ul>
+
+  <p><strong>iii. Location information.</strong></p>
+  <p>We may also use GPS technology OR other location services to determine your current location. You can withdraw your consent to our collection, processing or use of this information at any time by logging out and uninstalling the App from your Device.</p>
+
+  <p><strong>iv. Information we receive from other sources (Third Party Information).</strong></p>
+  <p>Due to the nature of the Services which we provide, we are required to work with a number of third parties (including credit reference agencies and mobile network providers) and we may receive information about you from them.</p>
+
+  <p><strong>v. Unique application numbers.</strong></p>
+  <p>When you install or uninstall a Service containing a unique application number or when such a Service searches for automatic updates, that number and information about your installation, for example, the type of operating system, may be sent to us.</p>
+
+<h3>B. Tracking and cookies</h3>
+  <p>We may use mobile tracking technologies and/or website cookies to distinguish you from other users of the App, App Site, or Service Sites. This helps us to provide you with a good experience when you use the App or browse any of the  Service Sites and also allows us to improve the App and Our Service Sites.</p>
+
+<h3>C. Uses made of the information</h3>
+  <p>We may associate any category of information with any other category of information and will treat the combined information as personal data in accordance with this Policy for as long as it is combined.</p>
+  <p>Information collected by us shall be used for the purpose of determining whether or not to provide a loan to the customer, the amount of such loan and the terms and conditions applicable to such loan.</p>
+  <p>Save in compliance with an order of the Court, Arbitral Panel, Tribunal, Regulatory Directive or Order or any other legal or regulatory obligation, we do not disclose information about identifiable individuals to other parties, but we may provide them with anonymous aggregate information about our users (for example, we may inform them that 500 men aged under 30 have applied for a loan on any given day).</p>
+
+<h3>D. Disclosure of your information</h3>
+  <p>We may disclose some or all of the data we collect from you when you download or use the App to credit reference bureaus.</p>
+  <p>We may disclose your personal information to any member of our group, which means our subsidiaries, affiliates, our holding company and its subsidiaries.</p>
+  <p>We may disclose your personal information to third parties:</p>
+    <ul class="pl-3">
+      <li>in the event that we sell or buy any business or assets, in which case we may disclose your personal data to the prospective seller or buyer of such business or assets;</li>
+      <li>if Loanika International or substantially all of its assets are acquired by a third party, in which case personal data held by it about its customers will be one of the transferred assets;</li>
+      <li>if we are under a duty to disclose or share your personal data in order to comply with any legal or regulatory obligation or request; and/or</li>
+      <li>in order to: enforce our Terms and Conditions and other agreements or to investigate potential breaches; report defaulters to any credit bureau; or for the purpose of publishing statistics relating to the use of the App, in which case all information will be aggregated and made anonymous.</li>
+    </ul>
+
+<h3>E. Where We store your personal data</h3>
+  <p>The data that we collect from you may be transferred to, and stored at, a destination outside your country of origin or residence (as applicable). It may also be processed by staff operating outside your country of origin or residence (as applicable), who work for us or for one of our suppliers. These staff members may be engaged in the fulfillment of your requests on the Service Sites. By submitting your personal data, you agree to the collection, transfer, storing or processing of your personal data in the manner set out above. We will take all steps reasonably necessary to ensure that your data is treated, stored and processed securely and in accordance with this privacy Policy.</p>
+  <p>Where we have given you (or where you have chosen) a password that enables you to access certain parts of Our Service Sites, you are responsible for keeping this password confidential. We ask you not to share a password with anyone. Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to Our Service Sites; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.</p>
+
+<h3>F. Your rights</h3>
+  <p>We will use your data for the purposes of compiling statistics relating to our user base or loan portfolio and may disclose such information to any third party for such purposes, provided that such information will always be anonymous.</p>
+  <p>Should we wish to use your information for marketing purposes, we will inform you prior to such use. You shall be entitled to prevent such usage by informing us, within 10 days of being informed of the proposed use, that you do not wish to disclose such information. You can also exercise the right at any time by contacting us at support@Loanika.co.</p>
+
+<h3>G. Changes to privacy policy</h3>
+  <p>Any changes we may make to this Policy in the future will be posted on this page and, where appropriate, notified to you when you next start the App or log onto one of the Service Sites. The new terms may be displayed on-screen and you may be required to read and accept them to continue your use of the App or the Services. In any event, by continuing to use the App or any Services after the posting of any changes, you confirm your continuing acceptance of this Policy together with such changes, and your consent to the terms set out therein.</p>
+  <p>Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to <strong>support@Loanika.co</strong>.</p>
+
+		</div>
+	</div>
+</div>
+
+      <div class='container-fluid bg-dark footer pb-5 pb-lg-10'>
+  <div class='container'>
+    <div class='row text-light-grey'>
+
+      <div class='col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-1'>
+            <h3 class='mb-4'>Curious about Loanika?</h3>
+            <div class='row'>
+              <div>
+                <a href='https://Loanika.co/about?force_locale=true' class='text-light-grey mr-3'>About</a>
+              </div>
+              <div>
+                <a href='https://Loanika.co/how-it-works?force_locale=true' class='text-light-grey mr-3'>How it works</a>
+              </div>
+              <div>
+                <a href='https://Loanika.co/news?force_locale=true' class='text-light-grey mr-3'>In the news</a>
+              </div>
+            </div>
+      </div>
+
+      <div class='col-6 col-sm-4 col-md-6 col-lg-2 col-xl-2 pt-5 pt-lg-10 order-sm-4'>
+        <h3 class='mb-4'>Download</h3>
+          <a href='https://play.google.com/store/apps/details?id=com.Loanika_international.Loanika.Loanika_demo_android&amp;referrer=home_page' class='text-decoration-none'><i class="fa fa-android"></i></a>
+
+      </div>
+        <div class='col-6 col-sm-4 col-md-6 col-lg-2 col-xl-2 pt-5 pt-lg-10 order-sm-3'>
+          <h3 class='mb-4'>Social</h3>
+            <a href='https://www.instagram.com/Loanika_co' target='_blank' class='text-decoration-none'><i class="fa fa-instagram"></i></a>
+            <a href='https://www.facebook.com/Loanikakenya' target='_blank' class='text-decoration-none'><i class="fa fa-facebook-square"></i></a>
+            <a href='https://twitter.com/Loanika_co' target='_blank' class='text-decoration-none'><i class="fa fa-twitter"></i></a>
+        </div>
+
+      <div class='col-sm-4 col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-2'>
+        <h3 class='mb-4'>Legal</h3>
+        <a class="text-light-grey mr-3" href="tou/ke.html">Terms of use</a>
+        <a class="text-light-grey mr-3" href="pp.html">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+
+<!-- Mirrored from Loanika.co.ke/pp by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2019 22:00:33 GMT -->
+</html>

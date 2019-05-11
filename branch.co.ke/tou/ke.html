@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from Loanika.co.ke/tou/ke by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2019 22:00:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f23f174f50","applicationID":"6850987","transactionName":"e1wKQhcJDw1SFxZeXFVWS0IKEw==","queueTime":1,"applicationTime":13,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loanika is a bank in your pocket, there for you at all times. Our first service is credit. We use technology to dramatically reduce the cost of delivering financial services in emerging markets. Join our team and help us disrupt financial services around the globe.">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-touch-icon-76x76.png">
+    <link rel="icon" type="image/png" href="../favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+
+    
+<link rel="canonical" href="../tou.html">
+
+  
+
+    <title>Loanika Kenya | Terms of Use</title>
+
+
+    <link rel="stylesheet" media="all" href="../../d2c5ectx2y1vm9.cloudfront.net/assets/web-779a269a03dc3886f6f94cc2bd9143dcc0cfd3d7ff553188535ef68f74b4e171.css" data-turbolinks-track="true" />
+
+    <script src="../../code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+//<![CDATA[
+window.jQuery || document.write(unescape('%3Cscript src="../../d2c5ectx2y1vm9.cloudfront.net/assets/jquery-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js">%3C/script>'))
+//]]>
+</script>
+    <script src="../../d2c5ectx2y1vm9.cloudfront.net/assets/web-1ecac8df84a895c68ab4857e3c85ba11b33617ced0f91531a1ee6d2f67a36c0e.js" data-turbolinks-track="true"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="BwjvdLVwNzgQOn4lzLmd2ysV/k9nX25GQNRMQZLkqDCWdO9B7K+Un6ue1NaAEKBRudjRSLt3+vgvjH4qyp7iRg==" />
+
+      <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','../../connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1034729949927829');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');</script>
+      <noscript><img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=1034729949927829&amp;ev=PageView&amp;noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+
+      <!-- Google Tag Manager -->
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TCGSTZW');</script>
+      <!-- End Google Tag Manager -->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class='body-tou'>
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCGSTZW"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+        
+<div class='container-fluid fixed-top transparent' id='header-container'>
+  <div class='container'>
+    <nav class="navbar navbar-nav navbar-custom navbar-expand py-3">
+        <ul class="nav navbar-root navbar-root-single mr-auto" id='nav-logo'>
+          <li class="nav-link"><a active_class="text-decoration-none active" inactive_class="text-decoration-none" class="text-decoration-none" href="../index.html"><img style="height: 2.8rem;" class="transition-brightness" src="../../d2c5ectx2y1vm9.cloudfront.net/assets/logo-5a6f97f580a4f616c2d8eaee20ed2326c2bb68596e1aeb1d9b3364a2f1e6ae1b.png" /></a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-nav-single navbar-tou navbar-ke" id='nav-primary'>
+          <li class="nav-link"><a class="text-decoration-on-hover" href="../faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+$('#nav-open').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').addClass('nav-md-show');
+});
+$('#nav-close').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').removeClass('nav-md-show');
+});
+</script>
+
+      
+<div class='container-fluid bg-light-green pt-5 hero generic-hero'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-sm-7 mt-20 mt-lg-30'>
+        <h1 class='pt-6 text-center text-md-left'>Terms of use</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+	<div class='row my-10'>
+		<div class='col'>
+
+      
+<h3>Loanika International Terms of Use and Loan Account Agreement - Kenya</h3>
+
+<h4>Terms and Conditions for the Opening and Use of a Loan Account with Loanika International</h4>
+
+<br><br>
+<p><b>WHEREAS</b></p>
+	<p>This Agreement is a financial services and an end-user licence agreement between you (“End-user” or “you”) and Loanika International Limited of a company duly incorporated under the laws of the Republic of Kenya with a company registration number CPR/2015/183658 (“BIL”, “us” or “we”) for the mobile application software, the data supplied with the software and the associated Services (defined below) (“App”)</p>
+
+	<p>This Agreement (together with our Privacy Policy) sets out the complete terms and conditions (the “Terms and Conditions”) which shall be applicable to the Account (as hereinafter defined) opened by you with BIL.</p>
+
+	<p>These Terms and Conditions and any amendments or variations thereto take effect on their date of publication.</p>
+
+<br><br>
+<p><b>IT IS AGREED AS FOLLOWS:</b></p>
+
+<br><br>
+<p><b>1. DEFINITIONS AND INTERPRETATION</b></p>
+	<p><b>1.1 Definitions</b></p>
+		<p>For the purposes of this Agreement and the preamble above, unless the context requires otherwise:</p>
+		<p>Acceptable Use Restrictions has the meaning given to it in clause 5;</p>
+		<p>Agreement means this Agreement;</p>
+		<p>Account means your loan account with BIL;</p>
+		<p>Business Day means a day other than a Saturday, Sunday or national or public holiday in the Republic of Kenya;</p>
+		<p>Credentials means your personal credentials used to access the App and operate your Account;</p>
+		<p>Credit Reference Bureau means a credit reference bureau duly licensed under the Banking Act pursuant to the Banking (Credit Reference Bureau) Regulations, 2013, as amended, revised or promulgated from time to time, to inter alia, collect and facilitate the sharing of customer credit information;</p>
+		<p>E-Money means the electronic monetary value depicted in your Mobile Money Account representing an equal amount of cash;</p>
+		<p>Equipment includes your mobile phone handset, SIM Card and/or other equipment which when used together enables you to access the Network;</p>
+		<p>Event of Default has the meaning given to it in clause 11.1;</p>
+		<p>Force Majeure means events, circumstances or causes beyond its reasonable control of BIL making BIL’s performance of its obligations inadvisable, commercially impracticable, illegal, or impossible, including but not limited to acts of God, war, strikes or labour disputes, embargoes or government orders;</p>
+		<p>Encumbrance includes any mortgage or charge (whether legal or equitable), lien, option, security interest, restrictive covenant, pledge, assignment, title retention, trust arrangement or other restriction of any kind or other encumbrance securing or any right conferring a priority of payment in respect of any obligation of any person;</p>
+		<p>Licence Restrictions has the meaning given to it in clause 4;</p>
+		<p>Loan means the principal amount of the loan made or to be made by BIL to you under this Agreement from time to time through the App or (as the context requires) the principal amount outstanding for the time being of that loan;</p>
+		<p>Mobile Money Account means your mobile money store of value, being the record maintained by Mobile Money Providers in Kenya of the amount of E-Money from time to time held by you in the Mobile Money Provider’s System;</p>
+		<p>Mobile Money means the money transfer and payments service operated by the Mobile Money Providers in Kenya;</p>
+		<p>Mobile Network Operator means a mobile network operator in Kenya registered with the Communications Authority  of Kenya;</p>
+		<p>Mobile Money Provider means a Mobile Network Operator that has been duly authorized by the Central Bank of Kenya under applicable law to offer Mobile Money Services in Kenya;</p>
+		<p>Mobile Money Service means the money transfer and payments service provided by the Mobile Money Providers through the Mobile Money System;</p>
+		<p>Mobile Money System means the system operated by the Mobile Money Providers in Kenya for the provision of the Mobile Money Service;</p>
+		<p>Network means a mobile cellular network operated by a Mobile Network Operator;</p>
+		<p>Privacy Policy means the BIL privacy policy that sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us;</p>
+		<p>Request means a request or instruction received by BIL from you or purportedly from you through the Network and the System and upon which BIL is authorised to act;</p>
+		<p>Services shall include any form of financial services or products that BIL may offer you pursuant to this Agreement and as you may from time to time subscribe to and “Service” shall be construed accordingly;</p>
+		<p>SIM Card means the subscriber identity module which when used with the appropriate mobile phone handset enables you to access the Network and to use the Mobile Money Account;</p>
+		<p>SMS means a short message service consisting of a text message transmitted from your mobile phone to another;</p>
+		<p>System means BIL’s electronic communications software enabling you to communicate with BIL for purposes of the Services. The System and the Services will for the purpose of this Agreement be accessed through a Mobile Network Operator’s System;</p>
+		<p>Technology has the meaning given to it in clause 3.1.4; and</p>
+		<p>Transaction Fees includes any fees and charges payable for the use of the Services as published by BIL on BILs website or by such other means as BIL shall in its sole discretion determine. Transaction Fees are subject to change at any time at BIL’s sole discretion.</p>
+	<p><b>1.2 Interpretation</b></p>
+		<p>1.2.1 In addition to the definitions in clause 1.1, unless the context requires otherwise:
+		the singular shall include the plural and vice versa;</p>
+		<p>1.2.2 a reference to any one gender, whether masculine, feminine or neuter, includes the other two.</p>
+		<p>1.2.3 All the headings and sub-headings in this Agreement are for convenience only and are not to be taken into account for the purposes of interpretation of this Agreement.</p>
+		<p>1.2.4 The recitals and schedules shall be deemed to form part of this Agreement.</p>
+
+<br><br>
+<p><b>2. ACCEPTANCE OF TERMS AND CONDITIONS</b></p>
+	<p>2.1 You must carefully read and understand the Terms and Conditions set out in this Agreement and as amended from time to time by BIL (the Terms and Conditions) before downloading or streaming the App or opening an account with BIL which will govern the use and operation of the App and the Account.
+	<p>2.2 After downloading the App, you will be deemed to accept the Terms and Conditions upon clicking the “Accept” option on BILs System asking you to confirm that you have read, understood and agreed to abide by the Terms and Conditions. If you do not agree with the Terms and Conditions please click the “Decline” option in BIL’s System. Please note that you will not be able to access the Services if you decline the Terms and Conditions. If you do not agree to the Terms and Conditions, we will not license the App to you.</p>
+	<p>2.3 By downloading the App and opening an Account with BIL, you agree to comply with and be bound by the Terms and Conditions governing the operation of the Account and you affirm that the Terms and Conditions herein are without prejudice to any other right that BIL may have with respect to the Account in law or otherwise.</p>
+	<p>2.4 These Terms and Conditions may be amended or varied by BIL from time to time and the continued use of the Services constitutes your agreement to be bound by the terms of any such amendment or variation. BIL will take all reasonable measures to notify you of any changes.</p>
+	<p>2.5 From time to time updates to the App may be issued through the website. Depending on the update, you may not be able to use the Services until you have downloaded or streamed the latest version of the App and accepted any new terms and conditions.</p>
+	<p>2.6 By using the App or any of the Services, you consent to us collecting and using technical information about the Equipment and related software, hardware and peripherals for Services that are internet-based or wireless to improve our products and to provide any Services to you. If you use these Services, you consent to us and our affiliates' and licensees' transmission, collection, retention, maintenance, processing and use of your data to determine our credit scoring services or to improve our Services and/or your experience while using the App.</p>
+
+<br><br>
+<p><b>3. GRANT AND SCOPE OF LICENCE</b></p>
+	<p>3.1 In consideration of you agreeing to abide by the terms of this Agreement, we grant you a non-transferable, non-exclusive licence to use the App on your Equipment, subject to these Terms and Conditions. We reserve all other rights. Except as expressly set out in this Agreement or as permitted by any local law, you agree:</p>
+		<p>3.1.1 not to rent, lease, sub-license, loan, translate, merge, adapt, vary or modify the App;</p>
+		<p>3.1.2 not to make alterations to, or modifications of, the whole or any part of the App, or permit the App or any part of it to be combined with, or become incorporated in, any other programs;</p>
+		<p>3.1.3 not to disassemble, decompile, reverse-engineer or create derivative works based on the whole or any part of the App or attempt to do any such thing except to the extent that such actions cannot be prohibited because they are essential for the purpose of achieving inter-operability of the App with another software program, and provided that:</p>
+			<p>3.1.3.1 the information obtained by you during such activities is not unnecessarily disclosed or communicated without our prior written consent to any third party; and is not used to create any software that is substantially similar to the App;</p>
+			<p>3.1.3.2 you include our copyright notice on all entire and partial copies you make of the App on any medium; not to provide or otherwise make available the App in whole or in part (including object and source code), in any form to any person without prior written consent from us; and</p>
+		<p>3.1.4 to comply with all technology control or export laws and regulations that apply to the technology used or supported by the App or any Service (the Technology).</p>
+
+
+<br><br>
+<p><b>4. TOGETHER LICENCE RESTRICTIONS</b></p>
+	<p>4.1 You must:</p>
+	<p>4.1.1 not use the App or any Service in any unlawful manner, for any unlawful purpose, or in any manner inconsistent with this Agreement, or act fraudulently or maliciously, for example, by hacking into or inserting malicious code, including viruses, or harmful data, into the App, any Service or any operating system;</p>
+	<p>4.1.2 not infringe our intellectual property rights or those of any third party in relation to your use of the App or any Service, including the submission of any material (to the extent that such use is not licensed by this Agreement);</p>
+	<p>4.1.3 not transmit any material that is defamatory, offensive or otherwise objectionable in relation to your use of the App or any Service;</p>
+	<p>4.1.4 not use the App or any Service in a way that could damage, disable, overburden, impair or compromise our systems or security or interfere with other users; and</p>
+	<p>4.1.5 not collect or harvest any information or data from any Service or our systems or attempt to decipher any transmissions to or from the servers running any Service.</p>
+
+
+<br><br>
+<p><b>5. TOGETHER ACCEPTABLE USE RESTRICTIONS</b></p>
+<p>5.1 INTELLECTUAL PROPERTY RIGHTS</p>
+	<p>5.1.1 You acknowledge that all intellectual property rights in the App and the Technology anywhere in the world belong to us or our licensors, that rights in the App are licensed (not sold) to you, and that you have no rights in, or to, the App or the Technology other than the right to use each of them in accordance with the terms of this Agreement. You acknowledge that you have no right to have access to the App in source-code form.</p>
+<p>5.2 USE OF THE SERVICES</p>
+	<p>5.2.1 The Services offered by BIL can only be utilized by persons over the age of 18. BIL reserves the right to verify the authenticity and status of your Mobile Money Account with the relevant Mobile Money Provider.</p>
+	<p>5.2.2 BIL’s acceptance of your application for an Account will be displayed on the App. You hereby acknowledge and accept that the acceptance by BIL of your application for an Account does not create any contractual relationship between you and the Mobile Money Providers beyond the terms and conditions that apply to your Mobile Money Account from time to time.</p>
+	<p>5.2.3 BIL reserves the right to decline your application for a loan or to revoke the same at any stage at BIL’s sole and absolute discretion and without assigning any reason or giving any notice thereto.</p>
+	<p>5.2.4 BIL reserves the right (in its sole and absolute discretion) to issue, decline to issue a loan and/or vary the terms of any loan depending on its assessment of the credit profile of each individual borrower from time to time. The terms of the loan and the interest rate payable in relation to each loan application will be displayed on the App.</p>
+<p>5.3 PERSONAL INFORMATION</p>
+	<p>5.3.1 You hereby agree and authorise BIL to verify information provided by you to BIL against the information held by the Mobile Money Providers in relation to your Mobile Money Account pursuant to the agreement between you and the relevant Mobile Money Provider for the provision of its products and services and the Mobile Money Service.</p>
+	<p>5.3.2 The information that BIL may verify against the information held by the Mobile Money Providers includes (without limitation): your phone number, name, date of birth, Identification Number (“ID”) or Passport Number and such other information that will enable BIL to identify you and comply with the regulatory “Know Your Customer” requirements (together the “Personal Information”).</p>
+	<p>5.3.3 You hereby agree and authorise BIL to verify information including, but not limited to, data relating to your phone (including, without limitation, your phone’s history) from your Equipment, from any SMS sent to you by the Mobile Money Providers and any financial services providers relating to your use of the Mobile Money Service and such other information as BIL shall require for purposes of providing you the Services (the “Relevant Information”).</p>
+	<p>5.3.4 You hereby consent to BIL verifying the Personal Information and the Relevant Information with the Mobile Money Providers and using of the Personal Information and the Relevant Information to the extent necessary in the opinion of BIL.</p>
+	<p>5.3.5 You hereby agree and authorise BIL to obtain and procure your Personal Information and Relevant Information from your respective Mobile Money Provider and you further agree and consent to the disclosure and provision of such Personal Information by the Mobile Money Provider and further to indemnify and hold BIL and the Mobile Money Provider harmless with respect to any claims, losses, liabilities and expenses (including legal fees and expenses) that may arise as a result of the disclosure and reliance on such Personal Information and/or Relevant Information.</p>
+	<p>5.3.6 You hereby agree and authorise BIL to obtain and procure your Personal Information from the Credit Reference Bureaus and you further agree and consent to the disclosure and provision of such Personal Information by the Credit Reference Bureaus.</p>
+	<p>5.3.7 BIL reserves the right to request for further information from you pertaining to your application for an Account at any time. Failure to provide such information within the time required by BIL may result in BIL declining to accept your application for an Account.</p>
+	<p>5.3.8 BIL reserves the right to supply consumer credit information to the Credit Reference Bureaus, and in this regard: you confirm that BIL may transmit to the Credit Reference Bureaus data about the App, opening and termination of an Account by you;</p>
+	<p>5.3.9 you acknowledge that information on non-compliance with the Terms and Conditions of this Agreement is transferred to the Credit Reference Bureaus; and</p>
+	<p>5.3.10 the Credit Reference Bureaus provide a credit profile and possibly credit scores on your creditworthiness, subject to the credit record.</p>
+
+<br><br>
+<p><b>6. REQUESTS MADE BY THE BORROWER</b></p>
+	<p>6.1 You hereby irrevocably authorise BIL to act on all Requests received by BIL from you (or purportedly from you) through the System and to hold you liable in respect thereof. BIL may nevertheless refuse to carry out any Requests in its sole and absolute discretion.</p>
+	<p>6.2 Subject to its discretion, BIL reserves the right to reject any Request in relation to a loan application from you even if you have previously been issued with a loan by BIL.</p>
+	<p>6.3 BIL shall be entitled to accept and to act upon any Request, even if that Request is otherwise for any reason incomplete or ambiguous if, in its absolute discretion, BIL believes that it can correct the incomplete or ambiguous information in the Request without any reference to you being necessary.</p>
+	<p>6.4 BIL shall be deemed to have acted properly and to have fully performed all the obligations owed to you notwithstanding that the Request may have been initiated, sent or otherwise communicated in error or fraudulently, and you shall be bound by any Requests on which BIL may act if BIL has in good faith acted in the belief that such instructions have been sent by you.</p>
+	<p>6.5 BIL may, in its absolute discretion, decline to act on or in accordance with the whole or any part of your Request pending further enquiry or further confirmation (whether written or otherwise) from you.</p>
+	<p>6.6 You agree to and shall release from and indemnify BIL against all claims, losses, damages, costs and expenses howsoever arising in consequence of, or in any way related to BIL having acted in accordance with the whole or any part of any of your Requests (or failed to exercise) the discretion conferred upon it.</p>
+	<p>6.7 You acknowledge that to the full extent permitted by law BIL shall not be liable for any unauthorised drawing, transfer, remittance, disclosure, any activity or any incident on your account by the fact of the knowledge and/or use or manipulation of your Account PIN, password, ID or any means whether or not occasioned by your negligence.</p>
+	<p>6.8 BIL is authorised to effect such orders in respect of your Account as may be required by any court order or competent authority or agency under the applicable laws.</p>
+	<p>6.9 In the event of any conflict between any terms of any Request received by BIL from you and this Agreement, this Agreement shall prevail.</p>
+
+<br><br>
+<p><b>7. INTEREST AND FEES</b></p>
+	<p>7.1 The interest payable by you to BIL in relation any Loan shall be displayed by BIL on the App. BIL shall be entitled to set and charge Transaction Fees, in connection with your use of the Services and from time to time amend or vary its Transaction Fees for the Services.. If BIL decides to start charging Transaction Fees or where already applicable, vary or amend its Transaction Fees, the Transaction Fees payable on any new application for Services will be displayed on the App. BIL will use reasonable endeavors to try notify you of any changes in relation to Transaction Fees within a reasonable period before such changes are implemented including displaying notices of the changes on the App or BIL website.</p>
+	<p>7.2 All payments to be made by you under this Agreement shall be made in full without any set off or counter claim and save in so far as required by the law to the contrary, free and clear of and without any deduction or withholding whatsoever. If you are at any time required to make any deduction or withholding from any payment to BIL you shall immediately pay to BIL such additional amounts as will result in BIL receiving the full amount it would have received had no such deduction or withholding been required.</p>
+	<p>7.3 If you fail to make any payments due to BIL at the due date for payment, BIL will be authorised to apply late fees on such amount loaned to you at a rate to be communicated to you.</p>
+
+<br><br>
+<p><b>8. STATEMENTS</b></p>
+	<p>8.1 A statement and activity report in respect of your Account will be made available on Request.  Requests shall be made via our e-mail address: support@Loanika.co or via a contact link on the App.</p>
+	<p>8.2 The statement on the App shall provide details of the last 4 (four) transactions (or such other number of transactions as determined by BIL) in your Account initiated from your Equipment.</p>
+	<p>8.3 Your statement will show all amounts added or taken from your Account. You must check your statement carefully and notify BIL as soon as possible if it includes any transaction or other entry which appears to you to be wrong or not made in accordance with your instructions.</p>
+	<p>8.4 BIL reserves the right to rectify discrepancies, add and/or alter the entries in your statements, without prior notice to you. BIL will however inform you of any rectification, additions and or alterations effected on your statements within a reasonable time after the changes are effected.</p>
+	<p>8.5 You will be notified of all transactions on your Account by way of SMS and the charges for this service will be debited to your Account.</p>
+	<p>8.6 Save for a manifest error, a statement issued to you in respect of your Loanika Account shall be conclusive evidence of the transactions carried out on your Loanika Account for the period covered in the statement.</p>
+
+<br><br>
+<p><b>9. TAXES</b></p>
+	<p>9.1 All payments to be made by you in connection with these Terms and Conditions are calculated without regard to any taxes payable by you. If any taxes are payable in connection with the payment, you must pay BIL an additional amount equal to the payment multiplied by the appropriate rate of tax. You must do so at the same time as making the payment.</p>
+	<p>9.2 You hereby consent and agree that BIL may withhold amounts in your Account if any tax authority requires BIL to do so, or BIL is otherwise required by law or pursuant to agreements with any tax authority to do so, or if BIL needs to comply with internal policies or with any applicable order or sanction of a tax authority.</p>
+
+<br><br>
+<p><b>10. BORROWER’S RESPONSIBILITIES</b></p>
+	<p>10.1 You shall at your own expense provide and maintain in safe and efficient operating order your Equipment necessary for the purpose of accessing the System and the Services.</p>
+	<p>10.2 You shall be responsible for ensuring the proper performance of your Equipment. BIL shall neither be responsible for any errors or failures caused by any malfunction of your Equipment, and nor shall BIL be responsible for any computer virus or related problems that may be associated with the use of the System, the Services and the Equipment. You shall be responsible for charges due to any service provider providing you with connection to the Network and BIL shall not be responsible for losses or delays caused by any such service provider.</p>
+	<p>10.3 You shall follow all instructions, procedures and terms contained in this Agreement and any document provided by BIL concerning the use of the System and the Services.</p>
+	<p>10.4 You hereby agree and acknowledge that you shall be solely responsible for the safekeeping and proper use of your Equipment and for keeping your Credentials secret and secure. You shall ensure that your Credentials do not become known or come into possession of any unauthorised person. BIL shall not be liable for any disclosure of your Credentials to any third party and you hereby agree to indemnify and hold BIL harmless from any losses resulting from any disclosure of your Credentials.</p>
+	<p>10.5 You shall take all reasonable precautions to detect any unauthorised use of the System and the Services. To that end, you shall ensure that all communications from BIL are examined and checked by you or on your behalf as soon as practicable after receipt by you in such a way that any unauthorised use of and access to the System will be detected. You shall immediately inform BIL in the event that:</p>
+		<p>10.5.1 You have reason to believe that your Credentials are or may be known to any person not authorised to know the same and/or have been compromised; and/or</p>
+		<p>10.5.2 You have reason to believe that unauthorised use of the Services has or may have occurred or could occur and a transaction may have been fraudulently input or compromised.</p>
+	<p>10.6 You shall at all times follow the security procedures notified to you by BIL from time to time or such other procedures as may be applicable to the Services from time to time. You acknowledge that any failure on your part to follow the recommended security procedures may result in a breach of your Account’s confidentiality. In particular, you shall ensure that the Services are not used or Requests are not issued or the relevant functions are not performed by anyone other than a person authorised to do so.</p>
+	<p>10.7 You shall not at any time operate or use the Services in any manner that may be prejudicial to BIL.</p>
+
+<br><br>
+<p><b>11. DEFAULT ON LOAN</b></p>
+	<p>11.1 An event of default (Event of Default) occurs when you:</p>
+		<p>11.1.1 fail to pay any sum payable for a Loan granted under these Terms and Conditions for a period of ninety (90) consecutive days unless failure to pay is caused solely by an administrative error or technical problem; or are declared bankrupt.</p>
+	<p>11.2 At any time after an Event of Default has occurred which is continuing, BIL may, without prejudice to any other right or remedy granted to it under any law:</p>
+		<p>11.2.1 terminate this Agreement in accordance with clause 12 below;</p>
+		<p>11.2.2 declare that the Loan (and all accrued interest and all other amounts outstanding under this Agreement is immediately due and payable, whereupon they shall become immediately due and payable; and</p>
+		<p>11.2.3 supply information concerning the Event of Default to Credit Reference Bureaus. A copy of any adverse information concerning you sent to a Credit Reference Bureau shall be made available to you upon written request.</p>
+
+<br><br>
+<p><b>12. VARIATION AND TERMINATION</b></p>
+	<p>12.1 BIL may at any time, upon notice to you, terminate or vary its business relationship with you and close your Account and in particular but without prejudice to the generality of the foregoing BIL may cancel credits which it has granted and require the repayment of outstanding debts resulting from such credits within such time as BIL may determine.</p>
+	<p>12.2 Without prejudice to BIL’s rights under clause 14.1, BIL may at its sole discretion suspend or close your Account:</p>
+		<p>12.2.1 if you use the Account for unauthorised purposes or where BIL detects any abuse/misuse, breach of content, fraud or attempted fraud relating to your use of the Services;</p>
+		<p>12.2.2 if your Account or agreement with a Mobile Network Operator is terminated for whatever reason;</p>
+		<p>12.2.3 if BIL is required or requested to comply with an order or instruction of or a recommendation from the government, court, regulator or other competent authority;</p>
+		<p>12.2.4 if BIL reasonably suspects or believes that you are in breach of these Terms and Conditions (including non-payment of any Loan amount due from you where applicable) which you fail to remedy (if remediable) within 14 days after the service of notice by email, SMS or other electronic means requiring you to do so;</p>
+		<p>12.2.5 where such a suspension or variation is necessary as a consequence of technical problems or for reasons of safety; to facilitate update or upgrade the contents or functionality of the Services from time to time; where your Account becomes inactive or dormant;</p>
+		<p>12.2.6 if BIL decides to suspend or cease the provision of the Services for commercial reasons or for any other reason as it may determine in its absolute discretion; or</p>
+		<p>12.2.7 if you breach any of the Licence Restrictions or the Acceptable Use Restrictions.</p>
+	<p>12.3 If your Account has a credit balance at any time as a result of overpayment of your Loan, you may issue a Request to BIL for payment of such credit balance and BIL will return any such balance to you, less any applicable fees, provided that such amount falls above the minimum transfer amounts specified by the relevant Mobile Money Provider.</p>
+	<p>12.4 Termination shall however not affect any accrued rights and liabilities of either party.</p>
+	<p>12.5 If BIL receives notice of your demise, BIL will not be obliged to allow any operation or withdrawal from your Account by any person except upon production of administration letters from a competent authority or confirmed grant of letters of administration or confirmed grant of probate by your legal representatives duly appointed by a court of competent jurisdiction.</p>
+
+<br><br>
+<p><b>13. EXCLUSION OF LIABILITY</b></p>
+	<p>13.1 BIL shall not be responsible for any loss suffered by you should the Services be interfered with or be unavailable by reason of the failure of any of your Equipment, or any other circumstances whatsoever not within BIL’s control including , without limitation, Force Majeure or error, interruption, delay or non- availability of the System, terrorist or any enemy action equipment failure, loss of power, adverse weather or atmospheric conditions, and failure of any public or private telecommunications system.</p>
+	<p>13.2 You acknowledge that the App has not been developed to meet your individual requirements, and that it is therefore your responsibility to ensure that the facilities and functions of the App as described meet your requirements.</p>
+	<p>13.3 We only supply the App for domestic and private use. You agree not to use the App and Documents for any commercial, business or resale purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.</p>
+	<p>13.4 BIL will not be liable for any losses or damage suffered by you as a result of or in connection with:</p>
+		<p>13.4.1 any defect or fault in the App or any Service resulting from you having altered or modified the App;</p>
+		<p>13.4.2 any defect or fault in the App resulting from you having used the App in breach of the terms of this Agreement;</p>
+		<p>13.4.3 your breach of any of the Licence Restrictions or the Acceptable Use Restrictions;</p>
+		<p>13.4.4 unavailability of sufficient funds in your Mobile Money Account;</p>
+		<p>13.4.5 failure, malfunction, interruption or unavailability of the System, your Equipment, the Network or a Mobile Money System; the money in your Account being subject to legal process or other encumbrance restricting payments or transfers thereof; your failure to give proper or complete instructions for payments or transfers relating to your Account;</p>
+		<p>13.4.6 any fraudulent or illegal use of the Services, the System and/or your Equipment; or</p>
+		<p>13.4.7 your failure to comply with these Terms and Conditions and any document or information provided by BIL concerning the use of the System and the Services.</p>
+	<p>13.5 If for any reason other than a reason mentioned in clauses 13.1 to 13.4, the Services are interfered with or unavailable, BIL’s sole liability under this Agreement in respect thereof shall be to re-establish the Services as soon as reasonably practicable.</p>
+	<p>13.6 Save as provided in clause 13.5, BIL shall not be liable to you for any interference with or unavailability of the Services, howsoever caused.</p>
+	<p>13.7 Under no circumstances shall BIL be liable to you for any loss of profit or anticipated savings or for any indirect or consequential loss or damage of whatever kind, howsoever caused, arising out of or in connection with the Services even where the possibility of such loss or damage is notified to BIL.</p>
+	<p>13.8 All warranties and obligations implied by law are hereby excluded to the fullest extent permitted by law.</p>
+
+<br><br>
+<p><b>14. INDEMNITY</b></p>
+	<p>14.1 In consideration of BIL complying with your instructions or Requests in relation your Account, you undertake to indemnify BIL and hold it harmless against any loss, charge, damage, expense, fee or claim which BIL suffers or incurs or sustains thereby and you absolve BIL from all liability for loss or damage which you may sustain from BIL acting on your instructions or requests or in accordance with these Terms and Conditions.
+	<p>14.2 The indemnity in clause 14.1 shall also cover the following:</p>
+	<p>14.2.1 All demands, claims, actions, losses and damages of whatever nature which may be brought against BIL or which it may suffer or incur arising from its acting or not acting on any Request or arising from the malfunction or failure or unavailability of any hardware, software, or equipment, the loss or destruction of any data, power failures, corruption of storage media, natural phenomena, riots, acts of vandalism, sabotage, terrorism, any other event beyond BIL’s control, interruption or distortion of communication links or arising from reliance on any person or any incorrect, illegible, incomplete or inaccurate information or data contained in any Request received by BIL.</p>
+	<p>14.2.2 Any loss or damage that may arise from your use, misuse, abuse or possession of any third party software, including without limitation, any operating system, browser software or any other software packages or programs.</p>
+	<p>14.2.3 Any unauthorised access to your Account or any breach of security or any destruction or accessing of your data or any destruction or theft of or damage to any of your Equipment.</p>
+	<p>14.2.4 Any loss or damage occasioned by the failure by you to adhere to these Terms and Conditions and/or by supplying of incorrect information or loss or damage occasioned by the failure or unavailability of third party facilities or systems or the inability of a third party to process a transaction or any loss which may be incurred by BIL as a consequence of any breach by these Terms and Conditions.</p>
+	<p>14.2.5 Any damages and costs payable to BIL in respect of any claims against BIL for recompense for loss where the particular circumstance is within your control.</p>
+
+<br><br>
+<p><b>15. COMMUNICATION BETWEEN US</b></p>
+	<p>15.1 If you wish to contact us in writing, or if any condition in these Terms and Conditions requires you to give us notice, you can send this to us by e-mail to support@Loanika.co or to such e-mail address that may be communicated to you from time to time. We will confirm receipt of this by contacting you in writing by e-mail.</p>
+	<p>15.2 If we have to contact you or give you notice in writing, we will do so by e-mail or by sms to the mobile phone number or email address you provide to us in your request for the App.</p>
+
+<br><br>
+<p><b>16. GENERAL</b></p>
+	<p>16.1 Remedies Cumulative</p>
+	<p>16.1.1 No failure on the part of any party to exercise, or delay on its part in exercising, any right, power or remedy provided by this Agreement or by law shall operate as a waiver thereof, nor shall any single or partial exercise of any such right, power or remedy preclude any further or other exercise of that, or any other, right, power or remedy.</p>
+	<p>16.2 No waiver</p>
+	<p>16.2.1 No failure by BIL to exercise, and no delay in exercising, any right or remedy in respect of any provision of this Agreement shall operate as a waiver of such right or remedy.</p>
+	<p>16.3 Effect of invalidity</p>
+	<p>16.3.1 If any provision or part of a provision of this Agreement shall be, or be found by any court of competent jurisdiction to be, invalid or unenforceable, such invalidity or unenforceability shall not affect the other provisions or parts of such provisions of this Agreement, all of which shall remain in full force and effect.</p>
+
+<br><br>
+<p><b>17. ENTIRE AGREEMENT</b></p>
+	<p>17.1 These Terms and Conditions and our Privacy Policy constitute the entire agreement between you and us and supersede and extinguish all previous agreements, promises, assurances, warranties, representations and understandings between us, whether written or oral, relating to its subject matter.</p>
+	<p>17.2 You acknowledge that in entering into this Agreement you do not rely on any statement, representation, assurance or warranty (whether made innocently or negligently) that is not set out in these Terms and Conditions or our Privacy Policy.</p>
+	<p>17.3 You and we agree that neither of us shall have any claim for innocent or negligent misrepresentation or negligent misstatement based on any statement in this Agreement.</p>
+
+<br><br>
+<p><b>18. DISPUTE RESOLUTION</b></p>
+	<p>18.1 Disputes</p>
+	<p>18.1.1 The Parties shall use their good faith efforts to resolve any dispute, controversy or claim of any nature whatsoever arising out of or in relation to or in connection with this Agreement.  To this end, the Parties in dispute shall each promptly appoint representatives of appropriate standing who shall meet and attempt to resolve any dispute between them.  In the event that an amicable settlement has not been reached within thirty (30) days of the parties’ representatives meeting as aforesaid, the following provisions of this clause 20 shall apply.</p>
+	<p>18.2 Arbitration</p>
+	<p>18.2.1 Any dispute, difference or question whatsoever and howsoever arising out of or in connection with this Agreement, save as specifically provided herein, shall be referred for final determination to a single arbitrator to be appointed by agreement between the parties hereto or in default of any such agreement within seven (7) days of the notification of any dispute by either party to the other then, upon application by either party, by the Chairman for the time being of the Kenya Loanika of the Chartered Institute of Arbitrators (“Institute”).</p>
+	<p>18.2.2 Such arbitration shall take place in Nairobi and shall be conducted in accordance with the Rules of Arbitration of the Institute.</p>
+	<p>18.2.3 To the extent permissible by law the determination of the arbitrator shall be final and binding upon the Parties and shall not be subject to any appeal.</p>
+	<p>18.2.4 Nothing in this clause 20.2 shall restrict either Party’s freedom to commence legal proceedings of any nature for the purposes of seeking preliminary injunctive relief or interim or conservatory measures from any court of competent jurisdiction pending the final decision or award of any arbitrator.</p>
+
+<br><br>
+<p><b>19. GOVERNING LAW</b></p>
+	<p>19.1 This Agreement shall be governed by and construed in accordance with the laws of Kenya.</p>
+
+<br><br>
+<p><b>20. BIL’s PRIVACY POLICY</b></p>
+	<p>20.1 We only use your personal information in accordance with our Privacy Policy. Please take the time to read our Privacy Policy, as it includes important terms which apply to you.</p>
+	<p>20.2 Upon downloading the App and clicking the “Accept” option with respect to these Terms and Conditions, you will be deemed to have accepted BIL’s Privacy Policy, a copy of which is available on the App.</p>
+
+		</div>
+	</div>
+</div>
+
+      <div class='container-fluid bg-dark footer pb-5 pb-lg-10'>
+  <div class='container'>
+    <div class='row text-light-grey'>
+
+      <div class='col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-1'>
+            <h3 class='mb-4'>Curious about Loanika?</h3>
+            <div class='row'>
+              <div>
+                <a href='https://branch.co/about?force_locale=true' class='text-light-grey mr-3'>About</a>
+              </div>
+              <div>
+                <a href='https://branch.co/how-it-works?force_locale=true' class='text-light-grey mr-3'>How it works</a>
+              </div>
+              <div>
+              </div>
+            </div>
+      </div>
+
+      <div class='col-6 col-sm-4 col-md-6 col-lg-2 col-xl-2 pt-5 pt-lg-10 order-sm-4'>
+        <h3 class='mb-4'>Download</h3>
+          <a href='https://play.google.com/store/apps/details?id=com.Loanika_international.Loanika.Loanika_demo_android&amp;referrer=home_page' class='text-decoration-none'><i class="fa fa-android"></i></a>
+
+      </div>
+        
+      <div class='col-sm-4 col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-2'>
+        <h3 class='mb-4'>Legal</h3>
+        <a class="text-light-grey mr-3" href="ke.html">Terms of use</a>
+        <a class="text-light-grey mr-3" href="../pp.html">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+
+
+</html>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from Loanika.co.ke/faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2019 22:00:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f23f174f50","applicationID":"6850987","transactionName":"e1wKQhcJDw1SFxZeXFVWS1AEFw==","queueTime":0,"applicationTime":25,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loanika is a bank in your pocket, there for you at all times. Our first service is credit. We use technology to dramatically reduce the cost of delivering financial services in emerging markets. Join our team and help us disrupt financial services around the globe.">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+
+    
+<link rel="canonical" href="faq.html">
+
+  
+
+
+    <title>Loanika Kenya | FAQs</title>
+
+
+    <link rel="stylesheet" media="all" href="../d2c5ectx2y1vm9.cloudfront.net/assets/web-779a269a03dc3886f6f94cc2bd9143dcc0cfd3d7ff553188535ef68f74b4e171.css" data-turbolinks-track="true" />
+
+    <script src="../code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+//<![CDATA[
+window.jQuery || document.write(unescape('%3Cscript src="../d2c5ectx2y1vm9.cloudfront.net/assets/jquery-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js">%3C/script>'))
+//]]>
+</script>
+    <script src="../d2c5ectx2y1vm9.cloudfront.net/assets/web-1ecac8df84a895c68ab4857e3c85ba11b33617ced0f91531a1ee6d2f67a36c0e.js" data-turbolinks-track="true"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="2aNFgWT6LmvMctYa61+KR9yyMchIFac0d9pbzfNyRoxI30W0PSWNzHfWfOmn9rfNTn8ez5Q9M4oYgmmmqwgM+g==" />
+
+      <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','../connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1034729949927829');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');</script>
+      <noscript><img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=1034729949927829&amp;ev=PageView&amp;noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+
+      <!-- Google Tag Manager -->
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TCGSTZW');</script>
+      <!-- End Google Tag Manager -->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class='body-faq'>
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCGSTZW"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+        
+<div class='container-fluid fixed-top transparent' id='header-container'>
+  <div class='container'>
+    <nav class="navbar navbar-nav navbar-custom navbar-expand py-3">
+        <ul class="nav navbar-root navbar-root-single mr-auto" id='nav-logo'>
+          <li class="nav-link"><a active_class="text-decoration-none active" inactive_class="text-decoration-none" class="text-decoration-none" href="index.html"><img style="height: 2.8rem;" class="transition-brightness" src="../d2c5ectx2y1vm9.cloudfront.net/assets/logo-5a6f97f580a4f616c2d8eaee20ed2326c2bb68596e1aeb1d9b3364a2f1e6ae1b.png" /></a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-nav-single navbar-faq navbar-ke" id='nav-primary'>
+          <li class="nav-link"><a class="active" href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+$('#nav-open').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').addClass('nav-md-show');
+});
+$('#nav-close').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').removeClass('nav-md-show');
+});
+</script>
+
+      
+<div class='container-fluid bg-light pt-5 hero faq-hero'>
+  <div class='container'>
+    <div class="row">
+      <div class="col-sm-7 my-20 text-center text-md-left">
+        <h1>Frequently<br>asked questions<br></h1>
+        <p class='text-large'>Can&#39;t find your answer? We&#39;re here to help! Ask one of our advisors at  <a href='mailto:kenya@loanika.co'>kenya@Loanika.co</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container pb-15' role='tablist' aria-multiselectable="true">
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#about_Loanika"">
+            <h1 id="heading_about_loanika" class='m-0'>About Loanika</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_what_is_Loanika">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#what_is_Loanika" aria-expanded="false" aria-controls="what_is_Loanika">
+                <h3 class='my-0'>What is Loanika?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="what_is_Loanika" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_what_is_Loanika">
+                Loanika makes it easy for people in Kenya to access a loan, anytime, anywhere. Complete our application in seconds and receive your loan straight into your mobile money account. Loanika is like a bank in your pocket, there for you at all times. Visit our <a href="https://Loanika.co/">website</a> to learn more.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_location">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#location" aria-expanded="false" aria-controls="location">
+                <h3 class='my-0'>Where is Loanika located?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="location" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_location">
+                Loanika has offices in Nairobi, Kenya; Lagos, Nigeria; Mexico City, Mexico; Mumbai, India; and San Francisco, United States.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_countries">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#countries" aria-expanded="false" aria-controls="countries">
+                <h3 class='my-0'>In which countries does Loanika operate?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="countries" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_countries">
+                At the moment, Loanika operates in India, Kenya, Tanzania, Nigeria, and Mexico.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_swahili_support">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#swahili_support" aria-expanded="false" aria-controls="swahili_support">
+                <h3 class='my-0'>Is there a Swahili version of Loanika?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="swahili_support" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_swahili_support">
+                Yes! Kindly ensure you are using the latest version of the app. Then from your app go to “My Account”, tap “Edit” next to “Language”, chooose “Kiswahili” and tap “Submit” to save.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_latest_version">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#latest_version" aria-expanded="false" aria-controls="latest_version">
+                <h3 class='my-0'>How do I get the latest version of the app?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="latest_version" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_latest_version">
+                You can follow <a href="http://bit.ly/Loanika_co">this link</a> and click Update. Or you can go to Google Play, search for “Loanika International” then click “Update”.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_networks">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#networks" aria-expanded="false" aria-controls="networks">
+                <h3 class='my-0'>Which networks does Loanika support?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="networks" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_networks">
+                In Kenya, we support Safaricom. We hope to expand our coverage in the near future.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_hiring">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#hiring" aria-expanded="false" aria-controls="hiring">
+                <h3 class='my-0'>Do you have any vacancies?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="hiring" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_hiring">
+                Thank you for your interest! Kindly follow this link <a href="https://Loanika.co/careers">to our careers page</a> to see a list of our current vacancies.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_contact">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="contact">
+                <h3 class='my-0'>Can I call a Loanika representative or visit the office?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="contact" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_contact">
+                At the moment, we do not provide customer support by phone number or in person. Please send us a message via the app any time, and we will help you resolve whatever issue you may have.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#my_account"">
+            <h1 id="heading_my_account" class='m-0'>My Account</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_change_personal_details">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#change_personal_details" aria-expanded="false" aria-controls="change_personal_details">
+                <h3 class='my-0'>How do I change my personal details?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="change_personal_details" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_change_personal_details">
+                To edit your personal details, click on this link <a href="Loanika://my-account">My Account</a> or go to “My Account” and click “Edit” under “Personal Info”.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_new_mobile_money_number">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#new_mobile_money_number" aria-expanded="false" aria-controls="new_mobile_money_number">
+                <h3 class='my-0'>How can I add a new mobile money number?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="new_mobile_money_number" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_new_mobile_money_number">
+                To register a new mobile money number, click on <a href="Loanika://financial-accounts">this link</a> then click on “Add Account”.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_validate_account">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#validate_account" aria-expanded="false" aria-controls="validate_account">
+                <h3 class='my-0'>How do I validate my mobile money account?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="validate_account" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_validate_account">
+                Loanika asks you to validate your mobile money account to ensure that it is a supported carrier and that it belongs to you. Click on <a href="Loanika://financial-accounts">this link</a> , then click on the phone number labeled NOT VALIDATED that you wish to use as your Loanika phone number.<br><br>Click “Validate” and then “Continue”. You will receive an SMS message with a 4-digit code that you will enter in the app to validate the number.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_sim_unsupported">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#sim_unsupported" aria-expanded="false" aria-controls="sim_unsupported">
+                <h3 class='my-0'>Why is my SIM unsupported?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="sim_unsupported" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_sim_unsupported">
+                You may see this error message if Loanika is unable to detect the required SIM in your phone. Kindly remove all other SIMs from your phone and leave only the Safaricom SIM you want to use and then log back into Loanika. You should be in a position to add your number and proceed to validate it.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_change_national_id">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#change_national_id" aria-expanded="false" aria-controls="change_national_id">
+                <h3 class='my-0'>Can I change my national ID number after I receive a loan?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="change_national_id" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_change_national_id">
+                At Loanika, we conform to the highest standards of data integrity. This means that you cannot change information that was previously used to process a successful loan application. We apologize for any inconveniences caused.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_delete_account">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#delete_account" aria-expanded="false" aria-controls="delete_account">
+                <h3 class='my-0'>Can I delete my account?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="delete_account" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_delete_account">
+                If you would like to delete your account, please make sure that you have repaid all of your loans and then write to us on the in-app chat with your request.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#eligibility_criteria"">
+            <h1 id="heading_eligibility_criteria" class='m-0'>Eligibility Criteria</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_loan_application_requirements">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#loan_application_requirements" aria-expanded="false" aria-controls="loan_application_requirements">
+                <h3 class='my-0'>What is required to receive a Loanika loan?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="loan_application_requirements" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_loan_application_requirements">
+                Requirements are simple - all you need to apply is your phone number or Facebook account, National ID and mobile money account. We will also request access to the data on your phone in order determine your eligibility.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_lending_decision">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#lending_decision" aria-expanded="false" aria-controls="lending_decision">
+                <h3 class='my-0'>How does Loanika make a lending decision?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="lending_decision" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_lending_decision">
+                Loanika uses data from your phone, including your handset details and SMS messages to make lending decisions. We combine this with your Loanika repayment history to build an individualised credit score, which determines the loan offers you receive.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_loan_not_approved">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#loan_not_approved" aria-expanded="false" aria-controls="loan_not_approved">
+                <h3 class='my-0'>Why was I rejected for a loan?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="loan_not_approved" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_loan_not_approved">
+                If you don’t get accepted when you apply, don't worry! Sometimes it may take several attempts to qualify for a loan. We encourage you to continue saving data on your phone and to reapply after the period stipulated.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_process_time">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#process_time" aria-expanded="false" aria-controls="process_time">
+                <h3 class='my-0'>How long does the application process take?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="process_time" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_process_time">
+                We aim to process all loans within 24 hours. On average we process loans in less than 3 hours and hope to reduce that to a few minutes.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_acceptance_chance">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#acceptance_chance" aria-expanded="false" aria-controls="acceptance_chance">
+                <h3 class='my-0'>How can I increase my chance of being accepted?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="acceptance_chance" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_acceptance_chance">
+                Loanika uses data from your phone as well as other sources to make a lending decision. To increase your chances of approval, please make sure to save the data on your phone, stay current with all other lenders, and correctly input your account details.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_shared_phone">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#shared_phone" aria-expanded="false" aria-controls="shared_phone">
+                <h3 class='my-0'>What if someone else applied with my phone?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="shared_phone" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_shared_phone">
+                Once a phone has been used to access Loanika, it cannot be used by anyone else. To access Loanika, kindly use another phone that you own and that has not been used for a Loanika loan before.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#loan_offers"">
+            <h1 id="heading_loan_offers" class='m-0'>Loan Offers</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_how_to_apply">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#how_to_apply" aria-expanded="false" aria-controls="how_to_apply">
+                <h3 class='my-0'>How do I apply for a loan?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="how_to_apply" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_how_to_apply">
+                To apply for a loan, kindly click on “My Loan”, select your repayment terms and amount, then click “Request This Loan”. Make sure that you confirm your phone number and click “Apply”.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_loan_limit">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#loan_limit" aria-expanded="false" aria-controls="loan_limit">
+                <h3 class='my-0'>How much can I borrow?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="loan_limit" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_loan_limit">
+                Our loan sizes range from Ksh 250 to Ksh 70,000. If you repay loans as scheduled, the amount that you can borrow will increase.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_loan_size">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#loan_size" aria-expanded="false" aria-controls="loan_size">
+                <h3 class='my-0'>How do you determine my loan offers?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="loan_size" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_loan_size">
+                The loan offers you see depend on a number of factors, including your repayment history with Loanika. If you repay each installment by its due date, you may unlock access to larger loans over time. Note that the increase may not always be immediate, and that repaying your loan late may result in smaller loan offers.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_higher_amount">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#higher_amount" aria-expanded="false" aria-controls="higher_amount">
+                <h3 class='my-0'>Can I apply for a higher amount than shown?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="higher_amount" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_higher_amount">
+                Unfortunately, you won't be able to access a loan of a larger size. The fastest way to increase the amount you are eligible for is to build credit by making each repayment as scheduled.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_largest_amount">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#largest_amount" aria-expanded="false" aria-controls="largest_amount">
+                <h3 class='my-0'>What&#39;s the largest amount I can take?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="largest_amount" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_largest_amount">
+                At the moment, the highest loan amount we offer is Ksh 70,000 but this may increase in the future.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_interest_rates">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#interest_rates" aria-expanded="false" aria-controls="interest_rates">
+                <h3 class='my-0'>What interest rate does Loanika charge?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="interest_rates" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_interest_rates">
+                Interest rates are determined by a number of factors, including your repayment history with Loanika and the cost of lending for us. Depending on these factors, our rates vary as follows:<br><br>&#8226; Loan Terms: 4 Weeks - 16 Months<br>&#8226; Late / Rollover Fees: None<br>&#8226; Interest Range: 10% - 27%<br>&#8226; Equivalent Monthly Interest: 1% - 14%<br>&#8226; Equivalent APR: 12% - 180%<br><br>Borrowers are required to cover any mobile money transaction fees, such as M-PESA charges, associated with repaying the loan. Standard SMS and data charges by your mobile carrier may apply.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_increase_frequency">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#increase_frequency" aria-expanded="false" aria-controls="increase_frequency">
+                <h3 class='my-0'>Will my loan size increase everytime I repay?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="increase_frequency" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_increase_frequency">
+                Your loan offers are automatically determined by a number of factors. Even though it may not always increase immediately, it will increase over time as you continue to make all of your repayments as scheduled.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_increase_velocity">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#increase_velocity" aria-expanded="false" aria-controls="increase_velocity">
+                <h3 class='my-0'>How fast will my loan size increase?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="increase_velocity" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_increase_velocity">
+                Each loan amount is automatically determined by our systems each time you repay based on a number of factors. We encourage you to keep making your repayments as scheduled to increase your loan amount.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#repayment"">
+            <h1 id="heading_repayment" class='m-0'>Repayment</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_how_to_repay">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#how_to_repay" aria-expanded="false" aria-controls="how_to_repay">
+                <h3 class='my-0'>How should I repay Loanika?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="how_to_repay" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_how_to_repay">
+                To make a repayment, follow these steps:<br>1. Navigate to MPesa in your Safaricom menu on your phone<br>2. Select Lipa na M-PESA<br>3. Choose the Paybill option<br>4. Enter the Paybill number 998608<br>5. For account number, enter your MPesa number on which you received your Loanika loan<br>6. Enter your repayment amount<br>7. Enter your M-PESA pin<br>8. Confirm that all details are correct and press ‘OK’.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_repay_once">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#repay_once" aria-expanded="false" aria-controls="repay_once">
+                <h3 class='my-0'>Can I repay with one payment at the end of the loan term?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="repay_once" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_repay_once">
+                We advise that you make your repayments as they appear on the “My Loan” page. Skipping your other repayments and paying the loan on the last due date will negatively affect your future loan amounts.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_repayment_schedule">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#repayment_schedule" aria-expanded="false" aria-controls="repayment_schedule">
+                <h3 class='my-0'>Where can I see my repayment schedule?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="repayment_schedule" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_repayment_schedule">
+                To view your repayment information, kindly click on the menu on your top left and select “My Loan”. You will be able to see your installments, due dates and the amount due on those dates.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_repay_monthly">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#repay_monthly" aria-expanded="false" aria-controls="repay_monthly">
+                <h3 class='my-0'>Is there a monthly repayment option?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="repay_monthly" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_repay_monthly">
+                Depending on the loan size you select, a monthly repayment option is available. Click on the blue arrow below “Select Terms” on the “My Loan” page to choose between weekly or monthly payments before requesting the loan. If you choose weekly repayments, you will need to pay each installment by its weekly due date in order for your loan to be considered on-time.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_missing_repayment">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#missing_repayment" aria-expanded="false" aria-controls="missing_repayment">
+                <h3 class='my-0'>My repayment didn&#39;t reflect. What should I do?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="missing_repayment" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_missing_repayment">
+                If you do not receive confirmation from Loanika that your repayment was received within a few hours, kindly send us the transaction confirmation message you received and the number you used to make the payment via “Customer Care”.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_repay_early">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#repay_early" aria-expanded="false" aria-controls="repay_early">
+                <h3 class='my-0'>Can I repay early?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="repay_early" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_repay_early">
+                We strongly encourage you to repay your loan on the dates available on “My Loan” to increase your loan offer amount.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_overpay">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#overpay" aria-expanded="false" aria-controls="overpay">
+                <h3 class='my-0'>What happens if I overpay my loan?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="overpay" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_overpay">
+                If you overpay your loan on your last repayment, the amount will remain on your account and be applied on the repayment of your next loan.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#late_repayment"">
+            <h1 id="heading_late_repayment" class='m-0'>Late Repayment and CRB</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_late_penalty">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#late_penalty" aria-expanded="false" aria-controls="late_penalty">
+                <h3 class='my-0'>What will happen if I miss my repayment?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="late_penalty" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_late_penalty">
+                Paying each installment by its due date allows you to access larger loan sizes. Late repayments will affect your ability to get subsequent or larger loans. If you are very late on your payments, we report to the Credit Reference Bureau (CRB). Blacklisting by the CRB may affect your ability to borrow from other lenders.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_change_schedule">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#change_schedule" aria-expanded="false" aria-controls="change_schedule">
+                <h3 class='my-0'>Can I request to repay my loan at a later date?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="change_schedule" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_change_schedule">
+                Unfortunately, Loanika cannot alter your repayment schedule after you've received a loan. If you are unable to repay the full amount due, we advise you to start making partial repayments as soon as possible.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_what_is_crb">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#what_is_crb" aria-expanded="false" aria-controls="what_is_crb">
+                <h3 class='my-0'>What is a Credit Reference Bureau?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="what_is_crb" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_what_is_crb">
+                A Credit Reference Bureau (CRB) collects credit information on individuals and can provide your repayment performance data to banks, lenders, and potential employers. CRBs help promote financial inclusion and prevent over indebtedness.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_clear_default">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#clear_default" aria-expanded="false" aria-controls="clear_default">
+                <h3 class='my-0'>What should I do when I clear my defaulted loan?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="clear_default" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_clear_default">
+                We will update and forward your details to the CRB for clearance. If you wish to acquire a certificate of clearance, kindly check with the CRB within a week of making your repayment.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_reported_crb">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#reported_crb" aria-expanded="false" aria-controls="reported_crb">
+                <h3 class='my-0'>To which Credit Reference Bureaus do you report?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="reported_crb" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_reported_crb">
+                We report to Metropol and TransUnion.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_batch_number">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#batch_number" aria-expanded="false" aria-controls="batch_number">
+                <h3 class='my-0'>How can I get my batch number?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="batch_number" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_batch_number">
+                If your account has been cleared with the CRB, please message customer care to receive the batch numbers for Metropol and TransUnion to follow up on your certificate.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#promotions_and_credits"">
+            <h1 id="heading_promotions_and_credits" class='m-0'>Promotions and Credits</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_referrals">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#referrals" aria-expanded="false" aria-controls="referrals">
+                <h3 class='my-0'>How do I get a bonus for inviting friends?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="referrals" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_referrals">
+                Get your unique referral code <a href="Loanika://invite-friends">here</a> and share with as many friends as you’d like. After a friend downloads the app, make sure they enter your code on our <a href="Loanika://promotion">Promotions page</a>. Once they repay their first loan, you will receive a bonus.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_enter_code">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#enter_code" aria-expanded="false" aria-controls="enter_code">
+                <h3 class='my-0'>I&#39;ve been invited by a friend. How do I input a code?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="enter_code" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_enter_code">
+                Please advise the person who invited you to Loanika to send you their promotion code, which is what you will enter in the “Promotions” page. If you were not invited by anyone or you have already repaid your first Loanika loan, the code will not be applicable. Kindly copy the code and paste it in the <a href="Loanika://promotion">Promotions page</a>.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_find_code">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#find_code" aria-expanded="false" aria-controls="find_code">
+                <h3 class='my-0'>Where can I find my invite code?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="find_code" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_find_code">
+                Go <a href="Loanika://invite-friends">here</a>. From there, you can message the person you want to invite. Your friend should then be able to click the link in the message they receive to download the app.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_receive_bonus">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#receive_bonus" aria-expanded="false" aria-controls="receive_bonus">
+                <h3 class='my-0'>How will I receive my bonus?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="receive_bonus" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_receive_bonus">
+                Bonuses are automatically deducted from the amount of principal you owe on your next loan. Kindly note that your friends must enter the code on their Promotions page before fully repaying their first loan or you won’t receive your bonus.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_bonus_balance">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#bonus_balance" aria-expanded="false" aria-controls="bonus_balance">
+                <h3 class='my-0'>How do I check my bonus balance?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="bonus_balance" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_bonus_balance">
+                You can check your balance <a href="Loanika://invite-friends">here</a>. Click on “Review your invite bonuses” to see your balance for credits received.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_missing_credit">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#missing_credit" aria-expanded="false" aria-controls="missing_credit">
+                <h3 class='my-0'>Why didn&#39;t I receive a credit for a friend I invited?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="missing_credit" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_missing_credit">
+                In order to receive the credit, kindly ensure that the person you invited registers your code on their account before they finish repaying their first loan.            </div>
+          </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col'>
+        <div class='faq-header py-10'>
+          <a href="#security_and_privacy"">
+            <h1 id="heading_security_and_privacy" class='m-0'>Security &amp; Privacy</h1>
+          </a>
+        </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_data_secure">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#data_secure" aria-expanded="false" aria-controls="data_secure">
+                <h3 class='my-0'>Can I trust Loanika with my data?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="data_secure" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_data_secure">
+                We use world-class data security and encryption techniques to protect the data you share with us. Loanika never shares your information with third parties unless it is for dedicated business purposes, such as reporting defaulted loans to authorized credit bureaus. We do not sell your data or credit profile.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_why_id">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#why_id" aria-expanded="false" aria-controls="why_id">
+                <h3 class='my-0'>Why does Loanika need my ID?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="why_id" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_why_id">
+                Loanika uses your ID to ensure your account belongs to you, and so that no one else can apply for a loan using your account. We understand that this is very sensitive information and take our customer privacy very seriously. If you have additional concerns, please contact the Loanika customer service team.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_why_phone_permissions">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#why_phone_permissions" aria-expanded="false" aria-controls="why_phone_permissions">
+                <h3 class='my-0'>Why do you need permission for my phone?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="why_phone_permissions" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_why_phone_permissions">
+                Loanika uses data from your phone, including your handset details and financial transaction messages to make lending decisions. These data are a crucial part of our decision making process, and allow us to provide seamless and efficient financial services.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_how_phone_permissions">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#how_phone_permissions" aria-expanded="false" aria-controls="how_phone_permissions">
+                <h3 class='my-0'>How do I give permissions to Loanika on my phone?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="how_phone_permissions" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_how_phone_permissions">
+                In your Android Phone, kindly go to Settings > Apps > Loanika > Permissions and make sure that you have enabled Loanika to access everything requested.            </div>
+          </div>
+          <div class="faq-question py-4">
+            <div class="faq-question-title" role="tab" id="heading_tos">
+              <a class="accordion-toggle collapsed text-decoration-none" data-toggle="collapse" href="#tos" aria-expanded="false" aria-controls="tos">
+                <h3 class='my-0'>What are your Terms of Use and Privacy Policy?</h3>
+                <div class='icon'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_plus-8d850a1033d28f1a30cc5cd1a25885430fccaa27f9a5d34b4440876a182e3a66.png' class='faq-plus'>
+                  <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/faq/icon_minus-2aa591d97612f8d08576f5463048dee3a8b668211f2fe2442768200d61d239e4.png' class='faq-minus'>
+                </div>
+              </a>
+            </div>
+            <div id="tos" class="faq-question-answer collapse pt-4 text-small" role="tabpanel" aria-labelledby="heading_tos">
+                Please read our <a href="http://Loanika.co/tou/ke">Terms of Use</a> and <a href="http://Loanika.co/pp">Privacy Policy</a>.            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<script>
+  function expandAndScrollToElement(element){
+    element.one('shown.bs.collapse', function() {
+      element[0].parentElement.scrollIntoView();
+      var headerHeight = $('#header-container').height();
+      window.scrollBy(0, -headerHeight);
+    });
+    element.collapse('show');
+  }
+
+  // opens faq app link, converts it to a web link, opens and scrolls to it
+  $(document).ready(function (){
+    $('a[href*="Loanika://faq/"]').click(function(e){
+      var hrefSplit = e.target.href.split("index.html");
+      var faqType = hrefSplit[hrefSplit.length-1];
+      expandAndScrollToElement($("#" + faqType));
+    });
+
+    // opens faq specified in URL and scrolls to it
+    var faqType = window.location.hash;
+    if (faqType) {
+      expandAndScrollToElement($(faqType));
+    }
+  });
+</script>
+
+      <div class='container-fluid bg-dark footer pb-5 pb-lg-10'>
+  <div class='container'>
+    <div class='row text-light-grey'>
+
+      <div class='col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-1'>
+            <h3 class='mb-4'>Curious about Loanika?</h3>
+            <div class='row'>
+              <div>
+                <a href='https://Loanika.co/about?force_locale=true' class='text-light-grey mr-3'>About</a>
+              </div>
+              <div>
+                <a href='https://Loanika.co/how-it-works?force_locale=true' class='text-light-grey mr-3'>How it works</a>
+              </div>
+              <div>
+                <a href='https://Loanika.co/news?force_locale=true' class='text-light-grey mr-3'>In the news</a>
+              </div>
+            </div>
+      </div>
+
+      <div class='col-6 col-sm-4 col-md-6 col-lg-2 col-xl-2 pt-5 pt-lg-10 order-sm-4'>
+        <h3 class='mb-4'>Download</h3>
+          <a href='https://play.google.com/store/apps/details?id=com.Loanika_international.Loanika.Loanika_demo_android&amp;referrer=home_page' class='text-decoration-none'><i class="fa fa-android"></i></a>
+
+      </div>
+        <div class='col-6 col-sm-4 col-md-6 col-lg-2 col-xl-2 pt-5 pt-lg-10 order-sm-3'>
+          <h3 class='mb-4'>Social</h3>
+            <a href='https://www.instagram.com/Loanika_co' target='_blank' class='text-decoration-none'><i class="fa fa-instagram"></i></a>
+            <a href='https://www.facebook.com/Loanikakenya' target='_blank' class='text-decoration-none'><i class="fa fa-facebook-square"></i></a>
+            <a href='https://twitter.com/Loanika_co' target='_blank' class='text-decoration-none'><i class="fa fa-twitter"></i></a>
+        </div>
+
+      <div class='col-sm-4 col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-2'>
+        <h3 class='mb-4'>Legal</h3>
+        <a class="text-light-grey mr-3" href="tou/ke.html">Terms of use</a>
+        <a class="text-light-grey mr-3" href="pp.html">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+
+<!-- Mirrored from Loanika.co.ke/faq by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 May 2019 22:00:30 GMT -->
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"f23f174f50","applicationID":"6850987","transactionName":"e1wKQhcJDw1SFxZeXFVWS18LAgYZ","queueTime":1,"applicationTime":14,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Loanika is a bank in your pocket, there for you at all times. Our first service is credit. We use technology to dramatically reduce the cost of delivering financial services in emerging markets. Join our team and help us disrupt financial services around the globe.">
+    <meta name="author" content="">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+
+    
+<link rel="canonical" href="index.html">
+
+ 
+
+
+    <title>Loanika Kenya | Home</title>
+
+
+    <link rel="stylesheet" media="all" href="../d2c5ectx2y1vm9.cloudfront.net/assets/web-779a269a03dc3886f6f94cc2bd9143dcc0cfd3d7ff553188535ef68f74b4e171.css" data-turbolinks-track="true" />
+
+    <script src="../code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+//<![CDATA[
+window.jQuery || document.write(unescape('%3Cscript src="../d2c5ectx2y1vm9.cloudfront.net/assets/jquery-395e36e8b50840dbe9f754bd87c5098de66e33f81061d9452420dbdb9ee760f1.js">%3C/script>'))
+//]]>
+</script>
+    <script src="../d2c5ectx2y1vm9.cloudfront.net/assets/web-1ecac8df84a895c68ab4857e3c85ba11b33617ced0f91531a1ee6d2f67a36c0e.js" data-turbolinks-track="true"></script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="mBi3blvPtXRtPzBW8KwZZVYO+JsW7uPSbwWNVNeacBEJZLdbAhAW09abmqW8BSTvxMPXnMrGd2wAXb8/j+A6Zw==" />
+
+      <!-- Facebook Pixel Code -->
+      <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','../connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '1034729949927829');
+        fbq('track', "PageView");
+        fbq('track', 'ViewContent');</script>
+      <noscript><img height="1" width="1" style="display:none"
+                     src="https://www.facebook.com/tr?id=1034729949927829&amp;ev=PageView&amp;noscript=1"
+      /></noscript>
+      <!-- End Facebook Pixel Code -->
+
+      <!-- Google Tag Manager -->
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TCGSTZW');</script>
+      <!-- End Google Tag Manager -->
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+
+
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu" class='body-index'>
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCGSTZW"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+        
+<div class='container-fluid fixed-top transparent' id='header-container'>
+  <div class='container'>
+    <nav class="navbar navbar-nav navbar-custom navbar-expand py-3">
+        <ul class="nav navbar-root navbar-root-single mr-auto" id='nav-logo'>
+          <li class="nav-link"><a active_class="text-decoration-none active" inactive_class="text-decoration-none" class="text-decoration-none active" href="index.html"><img style="height: 2.8rem;" class="transition-brightness" src="../d2c5ectx2y1vm9.cloudfront.net/assets/logo-5a6f97f580a4f616c2d8eaee20ed2326c2bb68596e1aeb1d9b3364a2f1e6ae1b.png" /></a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-nav-single navbar-index navbar-ke" id='nav-primary'>
+          <li class="nav-link"><a class="text-decoration-on-hover" href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+  </div>
+</div>
+
+<script>
+$('#nav-open').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').addClass('nav-md-show');
+});
+$('#nav-close').click(function(e) {
+  e.preventDefault();
+  $('#nav-primary').removeClass('nav-md-show');
+});
+</script>
+
+      
+<div class='container-fluid pt-5 bg-light hero index-local-hero' style="background-image: url('../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/index_local_hero.en_KE-90264b0c1bfe183df18d9a906c1982e2563372e7eda3469d4a722785ca7b633b.jpg');">
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-7 mt-5 mt-md-20 text-center text-md-left'>
+        <h1 class='pt-6'><span class='d-inline-block'>Loans for the</span> <span class='d-inline-block'>way you live</span></h1>
+        <p class='text-large'>Access up to Ksh 70,000 on your smartphone — <span class='d-none d-xl-inline'><br></span> anytime and anywhere.</p>
+        <div class='mt-5'>
+          <a href=https://play.google.com/store/apps/details?id=com.branch_international.branch.branch_demo_android&amp;referrer=home_page class='btn btn-large btn-primary btn-web-primary text-decoration-none text-info'>Download Loanika on Google Play</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='container-fluid d-md-none bg-light index-local-phone'>
+  <div class='row'>
+    <div class='col'>
+      <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/index_local_hero_sm.en_KE-cd52ff676924f6c2ba14312ab61ba8b50895cef3bf63b8610e3a551df968db95.png'>
+    </div>
+  </div>
+</div>
+
+
+<div class='container-fluid bg-light-lg-white index-local-blocks'>
+  <div class='container'>
+    <div class='row pt-3 pt-md-10'>
+      <div class='col-lg-4 mx-2 mt-4 m-lg-0 p-4 p-xl-5 bg-white-lg-light-grey text-center branch-fade-in'>
+        <h3>Build credit<br>as you go<br></h3>
+        <img class="my-4" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/icon_1-15887364164123bc8e61c806dcdd9e5107a2a0f163c77654264f6e304757b7e1.png" />
+        <p class='text-small'>We designed our loan process to fit your needs and help you grow. As you build credit with Loanika, you unlock larger loan amounts.</p>
+      </div>
+      <div class='col-lg-4 mx-2 mt-4 m-lg-0 p-4 p-xl-5 bg-white-lg-light-grey text-center branch-fade-in'>
+        <h3>Get what you <br>need on the go<br></h3>
+        <img class="my-4" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/icon_2-c525f4e1bdcb00276dd3df59866c435d2fd5dcaa0ee1677e22e0407c35a84d2f.png" />
+        <p class='text-small'>Unlike other lenders, we don&#39;t make you jump through hoops or fill out paperwork. Simply apply through the Branch app and get approved in under 24 hours.</p>
+      </div>
+      <div class='col-lg-4 mx-2 mt-4 m-lg-0 p-4 p-xl-5 bg-white-lg-light-grey text-center branch-fade-in'>
+        <h3>No hidden fees,<br>no surprises<br></h3>
+        <img class="my-4" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/icon_3-55aef76e41df59353fa5c12b5afd738c6f83d7272562e61f0144e55d0a2e6fbe.png" />
+        <p class='text-small'>We don't charge late fees or rollover fees, we don't put restrictions on how you spend your money, and our customer support team is available 24/7.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class='container-fluid branch-shape-container bg-light-lg-white position-relative pt-5 pt-lg-10'>
+  <div class='container'>
+    <div class='row pb-20'>
+      <div class='index-local-plants'>
+        <img src="../d2c5ectx2y1vm9.cloudfront.net/assets/index/plants-84b5b1e89496f73b887b394d0dd079c2849d8b4c70592ce76c5fddb97440788d.png" />
+      </div>
+      <div class='col-md-6 text-center'>
+        <div class='index-local-demo mt-10 mt-md-20'>
+          <div class='carousel-left position-absolute display-4 d-md-none'>
+            <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/caret_left_sm-5d4b0afb2905c398295ca22c0bf42af7f1fad2b4d6cf2703c28038a6316a6a32.png'>
+          </div>
+          <div class='carousel-right position-absolute display-4 d-md-none'>
+            <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/caret_right_sm-dc9377f5b4d545d0e6af659c9071c0a1977e7069dc55c6475d49b946b10bbcf4.png'>
+          </div>
+          <div class='frame'></div>
+          <div class='screens'>
+            <img class="carousel-step carousel-step-0 carousel-visible" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/demo_1-610d0731736f1d8f954964ee083236d304c0c6e53ecc3a6a4ec2185b06d6794b.jpg" />
+            <img class="carousel-step carousel-step-1 carousel-hidden" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/demo_2-c4fc5abebe876bf4672924c5f3217603cc1f1eacdaf59ada90b673c6f0e4d655.jpg" />
+            <img class="carousel-step carousel-step-2 carousel-hidden" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/demo_3-6dfc31b5b426c0d8e1511a1f19bbc4c671535cbc5a7442e02ad1fcae98cdfbd7.jpg" />
+            <img class="carousel-step carousel-step-3 carousel-hidden" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/demo_4-46812fa511b26f9b672e2db82d9e36f04ba055da5a7311d51b021af4a683a6fe.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class='col-md-6 mt-1 mt-md-30 text-center position-relative'>
+        <div class='index-local-demo-text'>
+          <div class='carousel-left position-absolute display-4 d-none d-md-block'>
+            <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/caret_left-2e4ad8a453f1a06f7d5180743087c93d00be9e3e0ef70875cd09919b674d749c.png'>
+          </div>
+          <div class='carousel-right position-absolute display-4 d-none d-md-block'>
+            <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/caret_right-46cc27c3f394c834311174eda486ecb35cdd85a736e8bec086d156c49fa8ab70.png'>
+          </div>
+          <div class='carousel-step carousel-step-0 carousel-visible'>
+            <h3 class='mb-4 d-none d-md-inline'><u>01</u></h3>
+            <h2><span class='d-inline-block'><a href='https://play.google.com/store/apps/details?id=com.branch_international.branch.branch_demo_android&amp;'>Download</a> the</span> <span class='d-inline-block'>Branch app</span></h2>
+          </div>
+          <div class='carousel-step carousel-step-1 carousel-hidden'>
+            <h3 class='mb-4 d-none d-md-inline'><u>02</u></h3>
+            <h2>Create<br>your account<br></h2>
+          </div>
+          <div class='carousel-step carousel-step-2 carousel-hidden'>
+            <h3 class='mb-4 d-none d-md-inline'><u>03</u></h3>
+            <h2>Apply for the loan that matches your needs</h2>
+          </div>
+          <div class='carousel-step carousel-step-3 carousel-hidden'>
+            <h3 class='mb-4 d-none d-md-inline'><u>04</u></h3>
+            <h2>Receive your loan into your MPesa account</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class='container-fluid bg-light-lg-white pb-10'>
+  <div class='container py-5 py-lg-15 bg-white-lg-light-grey'>
+    <div class='row justify-content-md-center'>
+      <div class='col-md-9 text-center px-4'>
+        <h2 class='mb-5'>Privacy is paramount</h2>
+        <p class='text-large'>All the data we use is encrypted and protected – never shared with third parties. We have strict policies in place that ensure our methods are properly communicated and customer data is always protected.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Hide Branch Stories temporarily in India -->
+  <div class='container mt-10 mb-10'>  
+    <div class='row'>
+        <div class='col-md-5 col-lg-3 d-none d-md-block'>  
+          <div class='index-video-container mb-4'>
+            <div class='index-video'>
+              <video autoplay muted>
+                <source src='https://d2c5ectx2y1vm9.cloudfront.net/assets/index/tile_1-548428d3c54c240c130c059fa69fc904b0d11006f4a0ffee7b8f9510aac77939.mp4' type='video/mp4'>
+                <img src='../d2c5ectx2y1vm9.cloudfront.net/assets/index/tile_1-d0a756caa32a2c72477339cd078cb26c8780624bb68691eb190283d1b6cf92f2.jpg'>
+              </video>
+            </div>
+          </div>    
+          <img class="w-100" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index/tile_2-f9be1f3f20f475d9820adcd87f25f4bd367c3b863ddeb0ff957c01eb42a8ef9f.jpg" />
+        </div>
+        <div class='col-md-7 col-lg-4 text-center px-5 px-md-2'>
+          <img class="w-100 pb-4" src="../d2c5ectx2y1vm9.cloudfront.net/assets/index_local/tile_3-ce862eb39743c92525d6ee088e2b1e00a89a4efd9cffff48157fdb45794355be.jpg" />
+        </div>
+
+      <div class='col-lg-5 px-3 pt-5 pt-lg-0 pl-lg-5 text-center text-lg-left'>
+        <h2 class='d-none d-lg-block'>Real Loanika Stories</h2>
+        <p class='text-large'>
+            “Since I joined Branch my life has changed and I&#39;m able to my manage my business better. I use my loans to pay my workers and buy construction materials. I&#39;m now at the Ksh 50,000 loan limit!”
+            <br><br>
+            – Caroline N., Kisumu        </p>
+        <div class='mt-5 text-center'>
+          <a href='https://play.google.com/store/apps/details?id=com.branch_international.branch.branch_demo_android&amp;referrer=home_page' class='btn btn-large btn-primary btn-web-primary'>Download Loanika on Google Play</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class='container mt-10 mb-10'>
+  <div class='row'>
+    <div class='col text-muted'>
+      <em>Loanika offers loans from Ksh 250 to Ksh 70,000. Loan terms range from 4 – 68 weeks. Interest ranges from 10% – 27% with an equivalent monthly interest of 1% – 14%, depending on your loan option. There are no late or rollover fees and no collateral necessary. Interest rates are determined by a number of factors, including your repayment history and the cost of lending for Branch. Standard SMS and data charges by your mobile carrier may apply.
+      </em>  
+    </div>
+  </div>
+</div>
+
+      <div class='container-fluid bg-dark footer pb-5 pb-lg-10'>
+  <div class='container'>
+    <div class='row text-light-grey'>
+
+      <div class='col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-1'>
+            <h3 class='mb-4'>Curious about Loanika?</h3>
+            <div class='row'>
+              <div>
+                <a href='https://branch.co/about?force_locale=true' class='text-light-grey mr-3'>About</a>
+              </div>
+              <div>
+                <a href='https://branch.co/how-it-works?force_locale=true' class='text-light-grey mr-3'>How it works</a>
+              </div>
+              <div>
+
+              </div>
+            </div>
+      </div>
+
+      <div class='col-6 col-sm-4 col-md-6 col-lg-2 col-xl-2 pt-5 pt-lg-10 order-sm-4'>
+        <h3 class='mb-4'>Download</h3>
+          <a href='https://play.google.com/store/apps/details?id=com.branch_international.branch.branch_demo_android&amp;referrer=home_page' class='text-decoration-none'><i class="fa fa-android"></i></a>
+
+      </div>
+        
+
+      <div class='col-sm-4 col-md-6 col-lg-4 col-xl-4 pt-5 pt-lg-10 order-sm-2'>
+        <h3 class='mb-4'>Legal</h3>
+        <a class="text-light-grey mr-3" href="pp.html">Privacy policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+
+
+</html>
